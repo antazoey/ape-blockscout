@@ -7,7 +7,8 @@ class EcosystemConfig(PluginConfig):
 
 
 class BlockscoutConfig(PluginConfig):
+    base: EcosystemConfig = EcosystemConfig()
     ethereum: EcosystemConfig = EcosystemConfig()
     gnosis: EcosystemConfig = EcosystemConfig()
-    polygon: EcosystemConfig = EcosystemConfig()
     optimism: EcosystemConfig = EcosystemConfig()
+    polygon: EcosystemConfig = EcosystemConfig()
